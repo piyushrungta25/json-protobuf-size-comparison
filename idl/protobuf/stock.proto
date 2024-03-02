@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message Stock {
+    string Date = 1;
+    float Open = 2;
+    float High = 3;
+    float Low = 4;
+    float Close = 5;
+    int32 Volume = 6;
+    int32 OpenInt = 7;
+}
+
+message StockList {
+    repeated Stock stocks = 1;
+}
